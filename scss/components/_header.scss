@@ -1,0 +1,40 @@
+.header {
+	
+	// .header__btn
+
+	&__btn {
+	}
+}
+.header-container{
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	display: flex;
+	align-items:baseline;
+}
+.logo-span {
+	font-family: 'Seymour One', sans-serif;
+	font-size: 21.76px;
+	letter-spacing: -2.176px;
+	margin-left: -7px;
+	color: #F8D24E;
+}
+.navigation {
+
+	// .navigation__list
+
+	&__list {
+		display: flex;
+	}
+
+	// .navigation__item
+
+	&__item {
+	}
+
+	// .navigation__link
+
+	&__link {
+	}
+}
