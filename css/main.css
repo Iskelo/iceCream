@@ -133,10 +133,6 @@ p {
 */
 .header-hero {
   background-color: var(--background-color);
-  background-image: url(/images/hero/dotes-desk.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
 }
 
 .header-container {
@@ -189,6 +185,10 @@ p {
 	|=============================
 */
 .hero-container {
+  background-image: url(/images/hero/dotes-desk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,15 +243,19 @@ p {
 }
 
 .hero-text {
+  margin-top: 24px;
   color: #fff;
   font-size: 14px;
   line-height: 1.4;
   width: 200px;
   font-family: "DM Sans", sans-serif;
-  padding-bottom: 24px;
 }
 
 .hero-more {
+  margin-top: 24px;
+  display: block;
+}
+.hero-more svg {
   fill: var(--primary-color);
 }
 
