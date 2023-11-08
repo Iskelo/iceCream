@@ -9,7 +9,7 @@
 	background-image: url(/images/hero/dotes-desk.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position:bottom;
+	background-position:bottom;	
 }
 
 .header-container {
@@ -55,18 +55,8 @@
 			display: flex;
 			gap: 4px;
 			padding: 12px 35px;
-			background-color: var(--active-color);
-			border-radius: 10px;
-			border: none;
-			align-items: center;
 			font-weight: 600;
-			transition: background-color var(--slow-anim);
-			&:hover{
-				background-color: var(--active-btn);
-			}
-			&:focus{
-				background-color: var(--active-btn);
-				color: var(--primary-color);
+			&:focus{				
 				fill: var(--primary-color);
 			}
 		}
@@ -84,6 +74,9 @@
 .hero-container {
 	display: flex;
 	position: relative;
+	padding-top: 50px;
+	padding-bottom: 65px;
+	justify-content: space-between;
 }
 	
 .hero-left {
@@ -95,7 +88,6 @@
 		}
 }
 .hero-title {
-	margin-top: 50px;
 	margin-bottom: 28px;
 	font-family: 'Seymour One', sans-serif;
 	text-transform: uppercase;
@@ -106,29 +98,18 @@
 	width: 367px;
 }
 .hero-btns {
-	.product-btn{
-		cursor:  pointer;
-		padding: 12px 34px;
-		border-radius: 10px;
-		background-color: transparent;
-		border: 2px solid var(--active-color);
-		color: var(--title-color);
-		font-size: 14px;
-		font-family: inherit;
-		font-weight: 600;
-		transition: border var(--slow-anim);
-		&:hover{
-			border: 2px solid var(--active-btn);
-		}
-		&:focus{
-			background-color: var(--active-btn);
-			color: var(--primary-color);
-		}
-	}
-	.link-btn{}
+	margin-bottom: 42px;
+}
+.product-btn{
+	padding: 12px 34px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: 34px;
 }
 .hero-content {
 	display: flex;
+	align-items: center;
+	gap: 16px;
 }
 .hero-img {
 
@@ -142,11 +123,19 @@
 		&__right {
 			position: absolute;
 			bottom: 0;
+			right: 92px;
 		}
 }
 .hero-text {
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 200px;
+	font-family: 'DM Sans', sans-serif;
+	padding-bottom: 24px;
 }
 .hero-more {
+	fill: var(--primary-color);
 }
 
 .hero-right {
@@ -156,9 +145,20 @@
 .hero-count {
 
 		// .hero-count__item
-
+		
 		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			color: var(--primary-color);
+			font-size: 14px;
 		}
 }
 .count {
+	font-size: 46px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: var(--title-color);
+	letter-spacing: 1.84px;
+	text-align: right;
 }

@@ -72,6 +72,60 @@ p {
   }
 }
 
+.border-btn {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid var(--active-color);
+  color: var(--title-color);
+  font-family: inherit;
+  -webkit-transition: border var(--slow-anim);
+  transition: border var(--slow-anim);
+}
+.border-btn:hover {
+  border: 2px solid var(--active-btn);
+}
+.border-btn:focus {
+  background-color: var(--active-btn);
+  color: var(--primary-color);
+}
+
+.default-btn {
+  cursor: pointer;
+  background-color: var(--active-color);
+  border-radius: 10px;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color var(--slow-anim);
+  transition: background-color var(--slow-anim);
+}
+.default-btn:hover {
+  background-color: var(--active-btn);
+}
+.default-btn:focus {
+  background-color: var(--active-btn);
+  color: var(--primary-color);
+}
+
+.link-btn {
+  color: var(--active-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-transition: color var(--slow-anim);
+  transition: color var(--slow-anim);
+}
+.link-btn:hover {
+  color: var(--active-btn);
+}
+.link-btn:focus {
+  color: var(--primary-color);
+}
+
 /*
 	|=============================
 	|  NAVIGATION
@@ -123,22 +177,9 @@ p {
   display: flex;
   gap: 4px;
   padding: 12px 35px;
-  background-color: var(--active-color);
-  border-radius: 10px;
-  border: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 600;
-  -webkit-transition: background-color var(--slow-anim);
-  transition: background-color var(--slow-anim);
-}
-.header__btn:hover {
-  background-color: var(--active-btn);
 }
 .header__btn:focus {
-  background-color: var(--active-btn);
-  color: var(--primary-color);
   fill: var(--primary-color);
 }
 
@@ -152,6 +193,11 @@ p {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  padding-top: 50px;
+  padding-bottom: 65px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-left__item {
@@ -159,7 +205,6 @@ p {
 }
 
 .hero-title {
-  margin-top: 50px;
   margin-bottom: 28px;
   font-family: "Seymour One", sans-serif;
   text-transform: uppercase;
@@ -170,39 +215,72 @@ p {
   width: 367px;
 }
 
-.hero-btns .product-btn {
-  cursor: pointer;
+.hero-btns {
+  margin-bottom: 42px;
+}
+
+.product-btn {
   padding: 12px 34px;
-  border-radius: 10px;
-  background-color: transparent;
-  border: 2px solid var(--active-color);
-  color: var(--title-color);
   font-size: 14px;
-  font-family: inherit;
   font-weight: 600;
-  -webkit-transition: border var(--slow-anim);
-  transition: border var(--slow-anim);
+  margin-right: 34px;
 }
-.hero-btns .product-btn:hover {
-  border: 2px solid var(--active-btn);
-}
-.hero-btns .product-btn:focus {
-  background-color: var(--active-btn);
-  color: var(--primary-color);
-}
+
 .hero-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
 }
 
 .hero-img__right {
   position: absolute;
   bottom: 0;
+  right: 92px;
+}
+
+.hero-text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 200px;
+  font-family: "DM Sans", sans-serif;
+  padding-bottom: 24px;
+}
+
+.hero-more {
+  fill: var(--primary-color);
 }
 
 .hero-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.hero-count__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+.count {
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--title-color);
+  letter-spacing: 1.84px;
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */

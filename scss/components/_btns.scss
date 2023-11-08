@@ -1,0 +1,47 @@
+.border-btn{
+	cursor:  pointer;		
+		border-radius: 10px;
+		background-color: transparent;
+		border: 2px solid var(--active-color);
+		color: var(--title-color);
+		font-family: inherit;		
+		transition: border var(--slow-anim);
+		&:hover{
+			border: 2px solid var(--active-btn);
+		}
+		&:focus{
+			background-color: var(--active-btn);
+			color: var(--primary-color);
+		}
+}
+
+.default-btn{
+	cursor: pointer;
+	background-color: var(--active-color);
+	border-radius: 10px;
+	border: none;
+	align-items: center;	
+	transition: background-color var(--slow-anim);
+	&:hover{
+		background-color: var(--active-btn);
+	}
+	&:focus{
+		background-color: var(--active-btn);
+		color: var(--primary-color);		
+	}
+}
+
+.link-btn{
+	color: var(--active-color); 
+	text-align: center;	
+	font-size: 14px;	
+	font-weight: 600;	
+	text-decoration-line: underline;
+	transition: color var(--slow-anim);
+	&:hover{
+		color: var(--active-btn);
+	}
+	&:focus{
+		color: var(--primary-color);
+	}
+}
