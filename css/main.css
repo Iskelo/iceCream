@@ -287,4 +287,37 @@ p {
   color: var(--title-color);
   letter-spacing: 1.84px;
   text-align: right;
+}
+
+.products {
+  background-image: url("/images/review/review-desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product__list-item {
+  width: 370px;
+  text-align: center;
+}
+
+.product-img {
+  position: relative;
+  width: 302px;
+  height: 302px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin-top: -10px;
+  -webkit-box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+}
+
+.item-img {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 302px;
+  height: 302px;
+}
+
+.item-content {
+  background-color: var(--secondary-color);
 }/*# sourceMappingURL=main.css.map */
