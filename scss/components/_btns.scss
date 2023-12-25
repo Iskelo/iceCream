@@ -20,7 +20,7 @@
 	background-color: var(--active-color);
 	border-radius: 10px;
 	border: none;
-	align-items: center;	
+	align-items: center;
 	transition: background-color var(--slow-anim);
 	&:hover{
 		background-color: var(--active-btn);

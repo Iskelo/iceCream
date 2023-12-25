@@ -1,0 +1,150 @@
+.advantages {
+	background-color: var(--background-color);
+	color: var(--primary-color);
+	padding-bottom: 178px;
+	// .advantages__header
+
+	&__header {
+		padding-top: 60px;
+		text-align: center;
+		
+	}
+
+	// .advantages__subtitle
+
+	&__subtitle {
+		font-size: 30px;
+		font-weight: 800;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+		
+	}
+
+	// .advantages__title
+
+	&__title {
+		margin-top: 12px;
+		font-family: Seymour One;
+		font-size: 36px;
+		font-weight: 400;
+		letter-spacing: 2.16px;
+		text-transform: uppercase;
+	}
+
+	// .advantages__content
+
+	&__content {
+		margin-top: 82px;
+		display: flex;
+		align-items: center;
+	}
+
+	// .advantages__figures
+
+	&__figures {
+		margin-top: 96px;
+	}
+}
+
+.content-left {
+	position: relative;
+	margin-right: 110px;
+}
+.img-back {
+
+	width: 490px;
+	height: 490px;
+	border-radius: 50%;
+	background-color: var(--secondary-color01);
+	box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+}
+.advantages-img {
+	position: absolute;
+	z-index: 1;
+	top: 39px;
+	left: 0;
+	width: 490px;
+	height: 490px;
+}
+.content-right {
+}
+.content-text {
+	font-size: 14px;
+	width: 463px;
+	font-weight: 400;
+	line-height: 194%; /* 27.16px */
+	letter-spacing: 0.56px;
+	padding-bottom: 8px;
+}
+.content-text:first-child{
+	width: 463px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.76;
+	letter-spacing: 0.64px;
+	
+}
+
+.advantages-btn {
+	margin-top: 46px;
+	width: 164px;
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+}
+
+.figures {
+
+	// .figures__list
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .figures__item
+
+	&__item {
+		width: 368px;
+		text-align: center;
+	}
+
+	// .figures__icon
+
+	&__icon {
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		background: #F8D24E;
+		border-radius: 50%;
+		margin-bottom: 40px;
+		svg{
+
+		}
+	}
+
+	// .figures__title
+
+	&__title {		
+		font-size: 58px;
+		font-weight: 700;
+		letter-spacing: 2.32px;
+		margin-bottom: 12px;
+	}
+
+	// .figures__text
+
+	&__text {
+		font-size: 16px;	
+		font-weight: 400;
+		line-height: 1.76;
+		letter-spacing: 0.32px;
+	}
+}
