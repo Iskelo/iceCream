@@ -1,17 +1,30 @@
 .products {
+	color: var(--title-color);
 	// background-color: red;
 	background-image: url("/images/review/review-desk.png");
 	background-repeat: no-repeat;
-	background-size:cover;
-	// background-position:bottom;
+	background-size: cover;
+	text-align: center;
+	height: 967px;
+	padding-bottom: 60px;
 	// .products__sub-title
 
 	&__sub-title {
+		padding-top: 60px;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 30px;		
 	}
 
 	// .products__title
 
 	&__title {
+		margin-top: 12px;
+		font-family: 'Seymour One', sans-serif;
+		font-size: 36px;
+		letter-spacing: 2.16px;
+		text-transform: uppercase;
 	}
 }
 
@@ -19,40 +32,71 @@
 
 	// .product__list
 
-	&__list {
-	
+	&__list {		
+		margin-top: 303px;
+	display: flex;
+	justify-content: space-between;
 	}
 
 	// .product__list-item
 
 	&__list-item {
+		position: relative;
 		width: 370px;
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
-.product-img{
-	position: relative;
+.back{
+	position: absolute;
+	top: -167px;
+	left: 50%;
+	transform: translate(-50%);
 	width: 302px;
 	height: 302px;
 	background-color: var(--secondary-color);
-	border-radius: 50%;
-	margin-top: -10px;
+	border-radius: 50%;	
 	box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
 }
+
 .item-img {
 	position: absolute;
-	bottom: 16px;
-	left: 0;
+	top: -183px;
+	left: 50%;
+	transform: translate(-50%);
 	width: 302px;
 	height: 302px;
+	z-index: 10;
 }
 
 .item-content {
 	background-color: var(--secondary-color);
+	box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+	border-radius: 24px;
+	width: 370px;
+	height: 536px;
 }
 .item-title {
+	margin-top: 165px;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	font-size: 30px;
 }
 .item-text {
+	margin: 66px auto 50px auto;
+	font-size: 16px;
+	letter-spacing: 0.64px;
+	line-height: 1.76;
+	width: 246px;
+	height: 142px;
+}
+.coffee{
+	background-color: var(--secondary-color01);
+}
+.milkshakes{
+	background-color: var(--secondary-color02);
 }
 .product-more {
 }
