@@ -596,4 +596,25 @@ p {
   width: 72px;
   height: 12px;
   background-color: var(--background-color);
+}
+
+.contact__item {
+  padding: 40px;
+  width: 368px;
+  height: 542px;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+}
+
+.card-title {
+  display: inline-block;
+  background-color: var(--active-color);
+}
+.card-title p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.64px;
 }/*# sourceMappingURL=main.css.map */
